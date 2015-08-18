@@ -4626,6 +4626,27 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <rectangle x1="-0.4" y1="0.175" x2="0" y2="0.4" layer="51"/>
 <rectangle x1="-0.25" y1="0.175" x2="0" y2="0.4" layer="21"/>
 </package>
+<package name="CHIPLED_1206_REVERSE">
+<wire x1="-0.4" y1="1.6" x2="0.4" y2="1.6" width="0.1016" layer="51" curve="172.619069"/>
+<wire x1="-0.8" y1="-0.95" x2="-0.8" y2="0.95" width="0.1016" layer="51"/>
+<wire x1="0.8" y1="0.95" x2="0.8" y2="-0.95" width="0.1016" layer="51"/>
+<circle x="-0.55" y="1.425" radius="0.1" width="0.1016" layer="51"/>
+<smd name="C" x="0" y="1.75" dx="1.5" dy="1.5" layer="1"/>
+<smd name="A" x="0" y="-1.75" dx="1.5" dy="1.5" layer="1"/>
+<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.85" y1="1.525" x2="-0.35" y2="1.65" layer="51"/>
+<rectangle x1="-0.85" y1="1.225" x2="-0.625" y2="1.55" layer="51"/>
+<rectangle x1="-0.45" y1="1.225" x2="-0.325" y2="1.45" layer="51"/>
+<rectangle x1="-0.65" y1="1.225" x2="-0.225" y2="1.35" layer="51"/>
+<rectangle x1="0.35" y1="1.3" x2="0.85" y2="1.65" layer="51"/>
+<rectangle x1="0.25" y1="1.225" x2="0.85" y2="1.35" layer="51"/>
+<rectangle x1="-0.85" y1="0.95" x2="0.85" y2="1.25" layer="51"/>
+<rectangle x1="-0.85" y1="-1.65" x2="0.85" y2="-0.95" layer="51"/>
+<rectangle x1="-1.1675" y1="0.35" x2="-0.8425" y2="0.775" layer="21"/>
+<rectangle x1="0.8425" y1="0.35" x2="1.1675" y2="0.775" layer="21"/>
+<hole x="0" y="0" drill="1.6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -5068,6 +5089,15 @@ Source: www.kingbright.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="CHIPLED_1206_REV" package="CHIPLED_1206_REVERSE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -5082,12 +5112,13 @@ Source: www.kingbright.com</description>
 </packages>
 <symbols>
 <symbol name="LONG_PAD">
-<pin name="P$1" x="0" y="0" length="middle" rot="R90"/>
+<pin name="P$1" x="0" y="0" visible="off" length="middle" rot="R90"/>
 <circle x="0" y="5.08" radius="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="7.62" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="0" y2="7.62" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.27" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8857,10 +8888,10 @@ by exp-lbrs.ulp</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="2K2"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="L1" library="led" deviceset="LED" device="CHIPLED_1206_REV" value="597-6001-607F"/>
+<part name="L2" library="led" deviceset="LED" device="CHIPLED_1206_REV"/>
 <part name="U$2" library="fmc" deviceset="LONG_PAD" device=""/>
-<part name="U$3" library="fmc" deviceset="LONG_PAD" device=""/>
+<part name="P2" library="fmc" deviceset="LONG_PAD" device=""/>
 <part name="PAD1" library="wirepad" deviceset="SMD5" device=""/>
 <part name="PAD2" library="wirepad" deviceset="SMD5" device=""/>
 <part name="PAD3" library="wirepad" deviceset="SMD5" device=""/>
@@ -8884,10 +8915,10 @@ handle 5A-6A.</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="162.56" y="0"/>
 <instance part="R1" gate="G$1" x="73.66" y="58.42" rot="R90"/>
-<instance part="LED1" gate="G$1" x="78.74" y="45.72"/>
-<instance part="LED2" gate="G$1" x="68.58" y="43.18" rot="R180"/>
+<instance part="L1" gate="G$1" x="78.74" y="45.72"/>
+<instance part="L2" gate="G$1" x="68.58" y="43.18" rot="R180"/>
 <instance part="U$2" gate="G$1" x="58.42" y="33.02"/>
-<instance part="U$3" gate="G$1" x="73.66" y="68.58"/>
+<instance part="P2" gate="G$1" x="73.66" y="68.58"/>
 <instance part="PAD1" gate="1" x="106.68" y="58.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="105.9942" y="67.183" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="103.378" y="59.563" size="1.778" layer="96" rot="R270"/>
@@ -8909,18 +8940,18 @@ handle 5A-6A.</text>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="P1" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="P2" gate="G$1" pin="P$1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="68.58" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="68.58" x2="48.26" y2="68.58" width="1.27" layer="91"/>
 <wire x1="48.26" y1="68.58" x2="48.26" y2="33.02" width="1.27" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="L2" gate="G$1" pin="A"/>
 <wire x1="58.42" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="33.02" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="L1" gate="G$1" pin="C"/>
 <wire x1="78.74" y1="40.64" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
 <junction x="68.58" y="33.02"/>
@@ -8930,11 +8961,11 @@ handle 5A-6A.</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="L2" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="48.26" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="L1" gate="G$1" pin="A"/>
 <wire x1="78.74" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
 <junction x="73.66" y="48.26"/>
 </segment>
