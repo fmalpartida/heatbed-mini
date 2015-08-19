@@ -5107,7 +5107,7 @@ Source: www.kingbright.com</description>
 <package name="LONG_PAD">
 <smd name="P$1" x="0" y="0" dx="10" dy="4" layer="16" rot="R180"/>
 <smd name="P$2" x="0" y="0" dx="10" dy="4" layer="1"/>
-<pad name="P$3" x="3.175" y="0" drill="1.5" shape="offset" rot="R180"/>
+<pad name="P$3" x="3.175" y="0" drill="2" shape="offset" rot="R180"/>
 </package>
 </packages>
 <symbols>
