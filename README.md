@@ -2,13 +2,14 @@
 Mini heatbed for small footprint 3D printers. This bed has been designed for the lewihe play but can be retrofitted to other small 
 printers with a print area of 100x100 mm.
 
-![mini heatbed] (https://github.com/fmalpartida/heatbed-mini/blob/master/images/heatbed%20mini%20top.png)
+![mini heatbed top] (https://github.com/fmalpartida/heatbed-mini/blob/master/images/heatbed%20mini%20top.png)
 
 ## Specifications
 + **Size:** 100x100 mm
 + **Rated voltage:** 12V
 + **Power disipation:** 60W aprox @ 12V
 + **Resistence:** 2.39 Ohms
+![mini heatbed dimensions] (https://github.com/fmalpartida/heatbed-mini/blob/master/images/heatedbed%20mini%20dimensions.png)
 
 ## License
 Released under CERN Open Hardware License v1.2
