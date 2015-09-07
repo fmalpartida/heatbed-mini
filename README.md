@@ -16,6 +16,7 @@ printers with a print area of 100x100 mm.
 + **Resistence:**
    + **Rev A**: 1.3 Ohms
    + **Rev B**: 2.1 Ohms
+
 <img src="https://github.com/fmalpartida/heatbed-mini/blob/master/images/heatedbed%20mini%20dimensions.png" alt="PCB dimensions" width=400>
 
 ## Images
