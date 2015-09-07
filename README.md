@@ -10,10 +10,10 @@ printers with a print area of 100x100 mm.
 
 + **Size:** 100x100 mm
 + **Rated voltage:** 12V
-+ **Power disipation:**
++ **Power dissipation:**
    + **Rev A:** 110W aprox @ 12V @25ºC
    + **Rev B:** 69W aprox @ 12V @25ºC
-+ **Resistence:**
++ **Resistance:**
    + **Rev A**: 1.3 Ohms
    + **Rev B**: 2.1 Ohms
 
