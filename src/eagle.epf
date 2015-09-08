@@ -1,5 +1,5 @@
 [Eagle]
-Version="07 00 00"
+Version="07 04 00"
 Platform="Mac OS X"
 Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
@@ -360,12 +360,5 @@ UsedLibrary="/Users/fmalpartida/Documents/development/mercurial repos/HW/SAV MKI
 UsedLibrary="/Users/fmalpartida/Documents/development/mercurial repos/HW/SAV MKI/libraries/libraryAtmel-at90usb-teensy.lbr"
 UsedLibrary="/Users/fmalpartida/Documents/development/mercurial repos/HW/SAVLibSAV MK-I.lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="204 23 1221 791"
-State=2
-Number=0
-
 [Desktop]
 Screen="1680 1050"
-Window="Win_1"
