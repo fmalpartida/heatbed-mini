@@ -8912,6 +8912,7 @@ by exp-lbrs.ulp</description>
 <part name="PAD3" library="wirepad" deviceset="SMD5" device=""/>
 <part name="PAD4" library="wirepad" deviceset="SMD5" device=""/>
 <part name="U$5" library="SAVLibSAV MK-I" deviceset="SPARKFUN_OSHW-LOGO" device="L"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="NTCS0805E3104FXT"/>
 </parts>
 <sheets>
 <sheet>
@@ -8955,6 +8956,10 @@ RevB - 69W - track width = 0.82 aprox</text>
 <attribute name="VALUE" x="165.862" y="85.217" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$5" gate="G$1" x="144.78" y="17.78"/>
+<instance part="R2" gate="G$1" x="162.56" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="120.4214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="178.816" y="125.984" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8994,6 +8999,11 @@ RevB - 69W - track width = 0.82 aprox</text>
 <pinref part="PAD1" gate="1" pin="P"/>
 <wire x1="162.56" y1="101.6" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="PAD4" gate="1" pin="P"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="121.92" x2="152.4" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
+<junction x="162.56" y="101.6"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -9001,6 +9011,11 @@ RevB - 69W - track width = 0.82 aprox</text>
 <pinref part="PAD2" gate="1" pin="P"/>
 <wire x1="165.1" y1="101.6" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="PAD3" gate="1" pin="P"/>
+<wire x1="165.1" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="101.6" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+<junction x="165.1" y="101.6"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="121.92" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
