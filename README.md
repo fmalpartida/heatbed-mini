@@ -10,12 +10,15 @@ printers with a print area of 100x100 mm.
 
 + **Size:** 100x100 mm
 + **Rated voltage:** 12V
++ **Maximum operational temperature:** 150ºC
 + **Power dissipation:**
    + **Rev A:** 110W aprox @ 12V @25ºC
    + **Rev B:** 69W aprox @ 12V @25ºC
 + **Resistance:**
    + **Rev A**: 1.3 Ohms
    + **Rev B**: 2.1 Ohms
+ 
+Do not exceed rated parameters.
 
 <img src="https://github.com/fmalpartida/heatbed-mini/blob/master/images/heatedbed%20mini%20dimensions.png" alt="PCB dimensions" width=400>
 
