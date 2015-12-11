@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2762,27 +2762,21 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-1.4" y1="-1.6" x2="-1.1" y2="1.6" layer="51"/>
 <rectangle x1="1.1" y1="-1.6" x2="1.4" y2="1.6" layer="51" rot="R180"/>
 </package>
-<package name="PRL1632">
-<description>&lt;b&gt;PRL1632 are realized as 1W for 3.2 × 1.6mm(1206)&lt;/b&gt;&lt;p&gt;
-Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
-<wire x1="0.7275" y1="-1.5228" x2="-0.7277" y2="-1.5228" width="0.1524" layer="51"/>
-<wire x1="0.7275" y1="1.5228" x2="-0.7152" y2="1.5228" width="0.1524" layer="51"/>
-<smd name="2" x="0.822" y="0" dx="1" dy="3.2" layer="1"/>
-<smd name="1" x="-0.822" y="0" dx="1" dy="3.2" layer="1"/>
-<text x="-1.4" y="1.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.4" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8" y1="-1.6" x2="-0.4" y2="1.6" layer="51"/>
-<rectangle x1="0.4" y1="-1.6" x2="0.8" y2="1.6" layer="51"/>
-</package>
-<package name="R01005">
-<smd name="1" x="-0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<smd name="2" x="0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2" y1="-0.1" x2="-0.075" y2="0.1" layer="51"/>
-<rectangle x1="0.075" y1="-0.1" x2="0.2" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
+<package name="R1005">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 </packages>
 <symbols>
@@ -2832,6 +2826,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </technologies>
 </device>
 <device name="R0805W" package="R0805W">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="R1005" package="R1005">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3552,24 +3555,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </technologies>
 </device>
 <device name="1812X7R" package="1812X7R">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PRL1632" package="PRL1632">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="01005" package="R01005">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -4658,8 +4643,8 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <rectangle x1="0.25" y1="1.225" x2="0.85" y2="1.35" layer="51"/>
 <rectangle x1="-0.85" y1="0.95" x2="0.85" y2="1.25" layer="51"/>
 <rectangle x1="-0.85" y1="-1.65" x2="0.85" y2="-0.95" layer="51"/>
-<rectangle x1="-1.1675" y1="0.35" x2="-0.8425" y2="0.775" layer="21"/>
-<rectangle x1="0.8425" y1="0.35" x2="1.1675" y2="0.775" layer="21"/>
+<rectangle x1="-1.1675" y1="0.35" x2="-0.8425" y2="0.875" layer="21"/>
+<rectangle x1="0.8425" y1="0.35" x2="1.1675" y2="0.875" layer="21"/>
 <hole x="0" y="0" drill="1.9"/>
 </package>
 </packages>
