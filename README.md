@@ -12,11 +12,9 @@ printers with a print area of 100x100 mm.
 + **Rated voltage:** 12V
 + **Maximum operational temperature:** 150ºC
 + **Power dissipation:**
-   + **Rev A:** 110W aprox @ 12V @25ºC
-   + **Rev B:** 69W aprox @ 12V @25ºC
+   + **Rev B:** 69W aprox: 12V @25ºC, 50W aprox: 12V @110ºC 
 + **Resistance:**
-   + **Rev A**: 1.3 Ohms
-   + **Rev B**: 2.1 Ohms
+   + **Rev B**: 2.1 Ohms aprox, 2.8 Ohms aprox @110ºC
  
 Do not exceed rated parameters.
 
